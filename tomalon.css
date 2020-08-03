@@ -1,0 +1,42 @@
+h1 {
+    border: 1px solid black;
+}
+
+.mqtt {
+    background-color: lightcoral;
+}
+
+.row {
+    padding: 5px;
+}
+
+div.form-group {
+    border: 1px solid black;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.col {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+hr {
+    color: black;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}

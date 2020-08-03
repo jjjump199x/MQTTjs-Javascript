@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQTT</title>
+
+    <!-- Added the Bootstrap CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="tomalon.css">
+
+</head>
+
+<body>
+    <div class="col-sm-12">
+        <center><h1 class="mqtt">MQTT</h1></center>
+
+        <div class="form-group container">
+            <div class="col">
+                <div class="row">
+                    <h1>Publish</h1>
+                </div>
+                <div class="row">
+                    <label for="topic">Topic:</label>
+                    <input id="topic-input" type="text">
+                </div>
+                <div class="row">
+                    <label for="payload">Payload:</label>
+                    <input id="payload-input" type="text">
+                </div>
+                <div class="row">
+                    <button id="publish-button" class="btn btn-primary" value="">Publish</button>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="row">
+                    <h1>Subscribe</h1>
+                </div>
+                <div class="row">
+                    <label for="topic">Topic:</label>
+                    <input type="text" id="subscribe-topic-input">
+                </div>
+                <div class="row">
+                    <button id="subscribe-button" class="btn btn-primary" value="">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="row">
+                    <h1>Message</h1>
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" id="topicHead">Topic</th>
+                            <th scope="col" id="payloadHead">Payload</th>
+                        </tr>
+                    <tbody id="tbl-body"></tbody>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="./browserMqtt.js"></script>
+<script src="tomalon.js"></script>
+
+
+</html>
